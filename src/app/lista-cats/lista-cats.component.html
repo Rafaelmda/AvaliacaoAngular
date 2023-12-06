@@ -1,0 +1,10 @@
+<ul>
+    <li *ngFor="let cat of cats">
+      <h2>{{ cat.name }}</h2>
+      <p><strong>Origin:</strong> {{ cat.origin }}</p>
+      <p><strong>Temperament:</strong> {{ cat.temperament }}</p>
+      <p><strong>Colors:</strong> {{ cat.colors.join(', ') }}</p>
+      <p>{{ cat.description }}</p>
+      <img [src]="cat.image" alt="{{ cat.name }}" width="200" height="200">
+    </li>
+  </ul>
